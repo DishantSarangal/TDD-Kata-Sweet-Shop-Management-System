@@ -1,0 +1,73 @@
+:root{
+
+
+  /* LANDING */
+  .landing-container{
+  text-align:center;
+  margin-top:80px;
+  }
+  .hero-title{ font-size:3.2rem; margin-bottom:10px; }
+  .hero-sub{ color:var(--muted); font-size:1.2rem; margin-bottom:32px; }
+  .hero-actions button{ margin:0 12px; }
+  
+  
+  /* AUTH FORMS */
+  .auth-wrapper{ display:flex; justify-content:center; margin-top:60px; }
+  .auth-card{
+  width:380px;
+  padding:30px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(16px);
+  animation:fadeIn 0.6s;
+  }
+  .subtitle{ color:var(--muted); margin-bottom:20px; }
+  .auth-card input, select{
+  width:100%; padding:10px; border:1px solid #ccc; border-radius:var(--radius); margin-bottom:14px;
+  }
+  .switch{ margin-top:14px; color:var(--muted); }
+  
+  
+  /* SWEET CARDS */
+  .grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(220px,1fr));
+  gap:20px;
+  }
+  .sweet-card{
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  backdrop-filter:blur(16px);
+  transition:transform 0.3s, box-shadow 0.3s;
+  }
+  .sweet-card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.12);
+  }
+  
+  
+  /* BUTTONS */
+  .btn{
+  width:100%; padding:12px; border:0; background:var(--accent); color:white; border-radius:var(--radius); cursor:pointer;
+  font-weight:600; margin-top:8px;
+  transition:opacity 0.3s;
+  }
+  .btn:hover{ opacity:0.9; }
+  .btn-muted{
+  padding:12px; border-radius:var(--radius); background:#ddd; }
+  
+  
+  /* ANIMATIONS */
+  .fade-in{ animation:fadeIn 0.6s ease; }
+  .slide-down{ animation:slideDown 0.5s ease; }
+  
+  
+  @keyframes fadeIn{
+  from{ opacity:0; }
+  to{ opacity:1; }
+  }
+  @keyframes slideDown{
+  from{ transform:translateY(-20px); opacity:0; }
+  to{ transform:translateY(0); opacity:1; }
+  }
