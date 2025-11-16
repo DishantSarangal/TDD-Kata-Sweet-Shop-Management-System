@@ -4,8 +4,12 @@ This project is a full-stack implementation of the **Sweet Shop Management Syste
 It includes a fully tested backend built with **Node.js**, **Express**, **JWT authentication**, **MongoDB**, and a modern frontend built with **React + Vite**, featuring dark mode, animations, a premium UI theme, and protected routes.
 
 The goal was to build a complete production-style application while following **Test-Driven Development**, clean architecture, and transparent AI-assisted development practices.
+<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/2c7c4e7c-d51f-4d18-90ca-3574ece36d90" />
+<img width="1905" height="868" alt="image" src="https://github.com/user-attachments/assets/1c63a8f6-393a-46e2-8938-f89646419be8" />
 
----
+---<img width="1917" height="868" alt="image" src="https://github.com/user-attachments/assets/a2a19856-5f8b-4096-a4a2-5bbf7e412311" />
+<img width="1919" height="858" alt="image" src="https://github.com/user-attachments/assets/f2c1a021-8eeb-44ba-b9fc-5d9e6333e695" />
+
 
 ## **🚀 Tech Stack**
 
