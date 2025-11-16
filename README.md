@@ -1,42 +1,38 @@
-Sweet Shop Management System – TDD Kata
+# **Sweet Shop Management System – TDD Kata**
 
-This project is a full-stack implementation of the Sweet Shop Management System assigned as a TDD Kata.
-It includes a fully tested backend built with Node.js, Express, JWT authentication, MongoDB, and a modern frontend built with React + Vite, featuring dark mode, animations, a premium UI theme, and protected routes.
+This project is a full-stack implementation of the **Sweet Shop Management System** assigned as a TDD Kata.
+It includes a fully tested backend built with **Node.js**, **Express**, **JWT authentication**, **MongoDB**, and a modern frontend built with **React + Vite**, featuring dark mode, animations, a premium UI theme, and protected routes.
 
-The goal was to build a complete production-style application while following Test-Driven Development, clean architecture, and transparent AI-assisted development practices.
+The goal was to build a complete production-style application while following **Test-Driven Development**, clean architecture, and transparent AI-assisted development practices.
 
-🚀 Tech Stack
-Backend
+---
 
-Node.js
+## **🚀 Tech Stack**
 
-Express.js
+### **Backend**
 
-MongoDB + Mongoose
+* Node.js
+* Express.js
+* MongoDB + Mongoose
+* JWT Authentication
+* Jest + Supertest (TDD)
+* dotenv
 
-JWT Authentication
+### **Frontend**
 
-Jest + Supertest (TDD)
+* React (Vite)
+* React Router
+* Framer Motion
+* React Toastify
+* Confetti animations
+* Dark Mode (custom implementation)
+* Premium CSS theme
 
-dotenv
+---
 
-Frontend
+## **📂 Project Structure**
 
-React (Vite)
-
-React Router
-
-Framer Motion
-
-React Toastify
-
-Confetti animations
-
-Dark Mode (custom implementation)
-
-Premium CSS theme
-
-📂 Project Structure
+```
 TDD-Kata-Sweet-Shop-Management-System/
 │
 ├── server/
@@ -58,165 +54,181 @@ TDD-Kata-Sweet-Shop-Management-System/
     │   ├── styles.css
     │   └── main.jsx
     └── package.json
+```
 
-🧪 Test-Driven Development
+---
 
-The backend was developed using a Red → Green → Refactor workflow.
+# **🧪 Test-Driven Development**
 
-Key TDD Areas
+The backend was developed using a **Red → Green → Refactor** workflow.
 
-Authentication tests
+### **Key TDD Areas**
 
-Sweet creation and purchase tests
+* Authentication tests
+* Sweet creation and purchase tests
+* Database cleanup between runs
+* Supertest-based integration tests
+* Verified JWT validation
+* Ensured test isolation
 
-Database cleanup between runs
+### **Run Tests**
 
-Supertest-based integration tests
-
-Verified JWT validation
-
-Ensured test isolation
-
-Run Tests
+```bash
 cd server
 npm test
+```
 
-🔐 Features
-Authentication
+---
 
-Register & Login
+# **🔐 Features**
 
-JWT-protected routes
+### **Authentication**
 
-Admin role support
+* Register & Login
+* JWT-protected routes
+* Admin role support
 
-Sweets Module
+### **Sweets Module**
 
-Add sweet (protected)
+* Add sweet (protected)
+* List sweets
+* Search sweets (name/category/price)
+* Update sweet
+* Delete sweet (admin only)
+* Purchase sweet
+* Restock sweet (admin only)
 
-List sweets
+### **Frontend Features**
 
-Search sweets (name/category/price)
+* Modern premium UI theme
+* Dark/Light mode toggle
+* Floating candy background
+* Confetti after successful purchase
+* Page transitions
+* Loading skeletons
+* Empty states
+* Protected routes
+* Responsive layout
 
-Update sweet
+---
 
-Delete sweet (admin only)
+# **⚙️ Setup Instructions**
 
-Purchase sweet
+## **Backend Setup**
 
-Restock sweet (admin only)
-
-Frontend Features
-
-Modern premium UI theme
-
-Dark/Light mode toggle
-
-Floating candy background
-
-Confetti after successful purchase
-
-Page transitions
-
-Loading skeletons
-
-Empty states
-
-Protected routes
-
-Responsive layout
-
-⚙️ Setup Instructions
-Backend Setup
+```bash
 cd server
 npm install
+```
 
+Create a `.env` file:
 
-Create a .env file:
-
+```
 MONGO_URI=your_mongo_connection_string
 JWT_SECRET=your_secret
 PORT=5000
-
+```
 
 Run backend:
 
+```bash
 npm start
+```
 
-Frontend Setup
+---
+
+## **Frontend Setup**
+
+```bash
 cd client
 npm install
 npm run dev
-
+```
 
 By default frontend runs on:
 
+```
 http://localhost:5173
+```
 
-🔗 API Endpoints
-Auth
-Method	Route	Description
-POST	/api/auth/register	Register user
-POST	/api/auth/login	Login user
-Sweets
-Method	Route	Protected	Description
-POST	/api/sweets	Yes	Add sweet
-GET	/api/sweets	No	List sweets
-GET	/api/sweets/search	No	Search
-PUT	/api/sweets/:id	Yes	Update
-DELETE	/api/sweets/:id	Admin	Delete
-POST	/api/sweets/:id/purchase	Yes	Purchase
-POST	/api/sweets/:id/restock	Admin	Restock
-🖼️ Screenshots (Add Your Images Here)
-Home Page
+---
 
-(insert screenshot)
+# **🔗 API Endpoints**
 
-Admin Dashboard
+### **Auth**
 
-(insert screenshot)
+| Method | Route              | Description   |
+| ------ | ------------------ | ------------- |
+| POST   | /api/auth/register | Register user |
+| POST   | /api/auth/login    | Login user    |
 
-Dark Mode
+### **Sweets**
 
-(insert screenshot)
+| Method | Route                    | Protected | Description |
+| ------ | ------------------------ | --------- | ----------- |
+| POST   | /api/sweets              | Yes       | Add sweet   |
+| GET    | /api/sweets              | No        | List sweets |
+| GET    | /api/sweets/search       | No        | Search      |
+| PUT    | /api/sweets/:id          | Yes       | Update      |
+| DELETE | /api/sweets/:id          | Admin     | Delete      |
+| POST   | /api/sweets/:id/purchase | Yes       | Purchase    |
+| POST   | /api/sweets/:id/restock  | Admin     | Restock     |
 
-Purchase Confetti Animation
+---
 
-(insert screenshot)
+# **🖼️ Screenshots (Add Your Images Here)**
 
-🧠 My AI Usage (Required Section)
+### **Home Page**
+
+*(insert screenshot)*
+
+### **Admin Dashboard**
+
+*(insert screenshot)*
+
+### **Dark Mode**
+
+*(insert screenshot)*
+
+### **Purchase Confetti Animation**
+
+*(insert screenshot)*
+
+---
+
+# **🧠 My AI Usage (Required Section)**
 
 The project was primarily designed, structured, and implemented manually.
-AI tools were used only as secondary assistance, mainly for:
+AI tools were used **only as secondary assistance**, mainly for:
 
-Debugging test environment issues
-
-Refining CSS animations
-
-Polishing frontend UI transitions
-
-Getting suggestions for minor optimizations
+* Debugging test environment issues
+* Refining CSS animations
+* Polishing frontend UI transitions
+* Getting suggestions for minor optimizations
 
 All architectural decisions, core backend logic, test cases, and major UI implementation were written and reasoned by the project author.
 
-AI Tools Used
+### **AI Tools Used**
 
-Chat-based AI assistant (for small guidance & debugging help)
+* Chat-based AI assistant (for small guidance & debugging help)
 
-How AI Was Used
+### **How AI Was Used**
 
-Asked for suggestions when stuck with Jest + Supertest setup
+* Asked for suggestions when stuck with Jest + Supertest setup
+* Requested ideas for UI polish (not code generation)
+* Confirmed edge cases for purchase/restock flow
 
-Requested ideas for UI polish (not code generation)
+### **Impact Assessment**
 
-Confirmed edge cases for purchase/restock flow
-
-Impact Assessment
-
-AI was helpful for saving time during debugging, but the main engineering work, logic, and implementation were done manually.
+AI was helpful for saving time during debugging, but **the main engineering work, logic, and implementation were done manually**.
 
 Per assignment requirements, all commits where AI suggestions influenced the changes include:
 
+```
 Co-authored-by: Chatgpt AI , Claude AI , Gemini 
+
+```
+
+---
 
 
